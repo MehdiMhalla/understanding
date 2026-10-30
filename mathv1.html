@@ -1,0 +1,1538 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Understanding understanding — Mathematical access</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$', '$$'], ['\\[', '\\]']]
+      }
+    };
+  </script>
+
+  <!-- MathJax loader -->
+  <script
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"
+    async>
+  </script>
+</head>
+
+<body>
+
+<header>
+  <h1>Mathematical access</h1>
+  <p class="subtitle">
+    Constructions, stabilizations, recoveries
+  </p>
+</header>
+
+<main>
+
+  <section class="orientation-note">
+    <p>
+      <p>
+This page presents a formal core.
+It does not replace standard mathematics,
+but shows how familiar structures
+emerge as stabilizations of interruptible,
+interpretable processes.
+</p>
+    </p>
+  </section>
+<section>
+  
+<section>
+  <h2>Plausible Conditions for mathematical emergence</h2>
+
+
+<p>
+    Before introducing formal objects or structures,
+    it is necessary to clarify
+    the minimal conditions under which mathematics
+    can emerge and stabilize within a human community.
+  </p>
+
+  <p>
+    These conditions are not themselves mathematical statements.
+    They do not belong to the object language.
+    Rather, they constrain what it means
+    for a formal system to be learnable,
+    transmissible, and revisable in practice.
+  </p>
+ <p>
+    In this work, a mathematical framework is considered acceptable
+    only if the following learning and stabilization processes
+    can themselves be rigidified:
+  </p>
+  <ul>
+    <li>
+      <strong>Gesture stabilizability.</strong>
+      The act of producing a mark or symbol
+      must be learnable as a reproducible gesture,
+      and this reproducibility must itself be stabilizable.
+    </li>
+
+    <li>
+      <strong>Contextual recognizability.</strong>
+      It must be possible to recognize an instance of a symbol
+      within a surrounding context,
+      and to separate it from neighboring instances,
+      in a way that can be taught and shared.
+    </li>
+
+    <li>
+      <strong>Interpretive rigidification.</strong>
+      Relations between symbols,
+      or between ways of writing and ways of reading,
+      must admit what at least locally looks like stabilized interpretations
+      that modulate observation
+      without exhausting alternative readings.
+    </li>
+
+    <li>
+      <strong>Plausibility differentiation.</strong>
+      The evaluation of interpretations
+      must admit at least two distinguishable outcomes,
+      allowing agreement, disagreement,
+      or suspension to be expressed and transmitted.
+    </li>
+  </ul>
+<p>
+  In this sense, the stabilization of practices within a community functions as a reference frame: it is what makes discretization possible without presupposing it.
+Mathematical objects appear as discrete only relative to such stabilized frames, not as pre-existing entities.</p>
+  <p>
+    Mathematical entities thus appear as discrete
+    only relative to such stabilized frames.
+    They are not taken as pre-existing primitives,
+    but as invariants extracted from repeatable,
+    interruptible, and interpretable activity.
+  </p>
+</section>
+
+  <section>
+
+  <section>
+  <h3>Limits of input stability</h3>
+
+  <p>
+    The discussion above implicitly assumes
+    that the space of inputs is well defined.
+    This assumption itself, however, cannot be guaranteed
+    without further stabilization.
+  </p>
+
+  <p>
+    In any system relying on memory, transmission,
+    or inherited traces,
+    parts of the past may be missing,
+    corrupted,
+    or no longer accessible.
+    From the point of view of the present computation,
+    this is indistinguishable from an interruption
+    that occurred before interpretation began.
+  </p>
+
+  <p>
+    As a consequence,
+    one cannot assume that all regions of the input space
+    are equally meaningful or even available.
+    What counts as an input
+    is already the result of a community-level
+    agreement on what may be trusted,
+    ignored,
+    or reconstructed.
+  </p>
+
+  <p>
+    This does not weaken formal reasoning.
+    It clarifies the scope of its guarantees:
+    correctness is always relative
+    to a stabilized fragment of history,
+    not to an idealized total memory.
+  </p>
+</section>
+  <h3>Methodological Interlude: Fixing a Default Point of View</h3>
+
+<p>
+Throughout this work,
+reasoning is both inductive and projective.
+When constructions are foregrounded,
+induction is the default.
+When relational spaces are foregrounded,
+projection is the default.
+Communities fix these defaults locally,
+not globally.
+</p>
+
+<p>
+  At this stage, in order to make transmission possible rather than merely local,
+  interpretation must be rigidified.
+  This is achieved by fixing a default point of entry,
+  taken here to be the <em>d</em>-point of view.
+</p>
+
+<p>
+  This choice is explicitly anthropomorphised.
+  The symbols are not treated as neutral placeholders:
+  <em>d</em> is read as Dolores,
+  <em>q</em> as Qudsia,
+  <em>p</em> as Persephone,
+  and <em>b</em> as Benedict.
+  This anthropomorphisation functions as a stabilizing device,
+  enabling a rigid and translatable interpretation
+  across readers and implementations.
+</p>
+
+<p>
+  What is fixed here is not belief, but orientation.
+  Alternative points of view remain possible,
+  but this one is declared as default
+  for all constructions that follow.
+</p>
+
+  <section>
+    <h2>Roles instead of types</h2>
+
+    <p>
+      Objects are not assigned fixed types.
+      Instead, they may play different roles
+      depending on context, scale, and stabilization.
+    </p>
+
+    <p>
+      A vertex, for instance, may act as a vertex number,
+      a port number, or a connection, and depending on which process is asking it has a vision of a role by default if it gets no answer.
+      Numerical identities emerge only through repetition,
+      positioning, or projection by POP-like mechanisms,
+      relative to constraints such as scale or boundedness.
+    </p>
+
+    <p>
+      In this view, typing is not primitive.
+      It is a local agreement reached by a community of constructions,
+      allowing certain roles to be reused reliably.
+    </p>
+  </section>
+  <section>
+  <h3>Messages, messengers, and paired roles</h3>
+
+  <p>
+    A message does not exist without a messenger,
+    just as a module does not exist without a ring.
+    What matters here is not the object,
+    but the <em>role</em> under which it is read.
+  </p>
+
+  <p>
+    Because roles are affected by narration and point of view,
+    an element of a community may be read in several paired ways:
+  </p>
+
+  <ul>
+    <li>
+      as a <strong>messenger</strong> carrying an implicitly paired
+      <strong>message</strong>
+      <code>(ATM&nbsp;s&nbsp;RTM)</code>,
+      where <code>s</code> is a stroke whose interpretation
+      depends on the current point of view;
+    </li>
+    <li>
+      as a <strong>message</strong> with its implicitly paired
+      <strong>messenger</strong>
+      <code>(RTM&nbsp;s&nbsp;ATM)</code>;
+    </li>
+    <li>
+      as a <strong>link</strong>,
+      either completed or waiting to be completed,
+      such as
+      <code>(ATM&nbsp;s&nbsp;RTM&nbsp;s'&nbsp;ATM)</code>
+      or
+      <code>(RTM&nbsp;s&nbsp;ATM&nbsp;s'&nbsp;RTM)</code>.
+    </li>
+  </ul>
+
+  <p>
+    Local rigidifications may restrict which synchronizations
+    are allowed or forbidden,
+    depending on context, boundaries, and orientation.
+    What counts as a valid pairing of strokes
+    is therefore a community-level decision,
+    not a global law.
+  </p>
+</section>
+  <section>
+    <h2>Carriers and insertion</h2>
+
+    <p>
+      We begin with carriers rather than symbols.
+      A carrier is not defined by an alphabetic identity,
+      but by the presence of explicit insertion sites.
+      These sites mark where something may be written,
+      rewritten, or interpreted as having been written.
+    </p>
+
+    <p>
+      A minimal example may be sketched as <code>.|.</code>.
+      This object does not encode a value.
+      It exposes a visible separation and two insertion points.
+      Its meaning depends on how an imagined reader
+      anticipates the order of reading and insertion.
+    </p>
+
+    <p>
+      Such carriers are intentionally underdetermined.
+      They are designed to support multiple compatible readings,
+      rather than enforcing a single symbolic interpretation.
+    </p>
+  </section>
+
+<section class="intent-box">
+  <h3>Symbol, Intent, and Community Reading</h3>
+
+  <p class="intro">
+    Each symbol is composed of three non-aligned strokes.  
+    The central stroke carries content; lateral strokes carry inferred or forced intent.
+  </p>
+
+  <div class="symbols">
+
+    <div class="symbol">
+      <div class="stroke up"></div>
+      <div class="stroke center"></div>
+      <div class="stroke down"></div>
+      <div class="label">No explicit intent</div>
+    </div>
+
+    <div class="symbol">
+      <div class="stroke up arrow"></div>
+      <div class="stroke center"></div>
+      <div class="stroke down"></div>
+      <div class="label">Guessed intent</div>
+    </div>
+
+    <div class="symbol">
+      <div class="stroke up arrow"></div>
+      <div class="stroke center"></div>
+      <div class="stroke down arrow"></div>
+      <div class="label">Forced intent</div>
+    </div>
+
+  </div>
+
+  <p class="note">
+    Intent is not meaning. It is a directional hypothesis inferred from history.
+    Different communities inflate or deflate intent at different translation costs.
+  </p>
+</section>
+  <section>
+    <h2>Synchronization as primitive</h2>
+
+    <p>
+      Synchronization is treated as a primitive relation.
+      It is not reduced to equality, substitution,
+      or function application.
+    </p>
+
+    <p>
+      A synchronizer relates two pairs
+      <code>(belief, assurance)</code>,
+      while itself carrying a situated view
+      of what is being synchronized.
+      Neither belief nor assurance is absolute;
+      both are defined relative to a presumed center
+      of the community in which synchronization takes place.
+    </p>
+
+    <p>
+      This allows derivations to be understood
+      not as single analytic paths,
+      but as families of compatible paths
+      maintained in superposition
+      until a local rigidification is required.
+    </p>
+  </section>
+
+<section>
+  <h2>Defaults as progressive synchronization</h2>
+
+  <p>
+    What is usually called a “default” is not treated here
+    as an absence of information, nor as an error state.
+    Instead, it is understood as the result of a progressive
+    relaxation of synchronization requirements.
+  </p>
+
+  <p>
+    Consider an attempt to synchronize an algorithm,
+    a command, and a parameter.
+    Such an attempt may succeed fully,
+    but it may also fail partially,
+    while still preserving meaningful structure.
+  </p>
+
+  <p>
+    Rather than collapsing into failure,
+    synchronization may settle on weaker agreements:
+    first retaining the algorithm and command,
+    then the algorithm alone,
+    and finally only an explicit boundary
+    indicating that something was intended,
+    even if its content can no longer be recovered.
+  </p>
+
+  <p>
+    These successive relaxations do not represent errors.
+    They correspond to admissible fallback positions,
+    each preserving a form of mutual intelligibility
+    within a community.
+  </p>
+
+  <p>
+    In its weakest form, the default reduces to a visible boundary,
+    such as <code>-|-</code>.
+    This boundary is not meaningless:
+    it marks the persistence of an intention to communicate,
+    even when algorithmic, semantic, or parametric details
+    can no longer be synchronized.
+  </p>
+
+  <p>
+    Defaults are thus understood as stabilized outcomes
+    of interrupted synchronization processes.
+    They play a central role in allowing systems—
+    human or formal—to remain operational
+    under informational loss or mismatch of expectations.
+  </p>
+</section>
+
+<section>
+  <h2>Communities as contextual probability seeds</h2>
+
+  <p>
+    Probability is not introduced here as a primitive measure
+    attached to events.
+    It emerges from how a community stabilizes
+    selections within a rigidified sequence of past interactions.
+  </p>
+
+  <p>
+    Let $E = (e_1, e_2,\ldots , e_n)$ be a finite or growing sequence,
+    stabilized as a shared history.
+    No intrinsic classification is assumed on its elements.
+    All distinctions arise from contextual selection.
+  </p>
+
+ <p>
+  A community does not operate by extracting intrinsic subsequences
+  from a given history.
+  Instead, it stabilizes a finite sequence <code>E</code>
+  and repeatedly traverses it under a fixed but revisable length.
+  POP-like constructions then <em>point to positional addresses</em>
+  across these repetitions.
+</p>
+
+<p>
+  What matters are not elements taken out of <code>E</code>,
+  but the positions that are selected when the sequence is read,
+  reread, or synchronized at different moments.
+  Two selections are considered disjoint
+  when they refer to non-overlapping positional addresses
+  within these traversals.
+</p>
+
+<p>
+  When introducing labels for such selections,
+  no denomination is neutral.
+  Interchanging letters throughout the construction
+  changes which compatibilities are preserved,
+  which expectations are stabilized,
+  and which interpretations remain accessible.
+</p>
+
+<p>
+  With this in mind, a stabilized reading may be <em>presented</em> as:
+</p>
+
+<pre>
+E ≃ A ⊔ C ⊔ R
+</pre>
+
+<p>
+  This presentation should not be read as a decomposition
+  of an object into intrinsic parts,
+  but as a bookkeeping device
+  relative to a chosen traversal and addressing scheme.
+</p>
+
+<ul>
+  <li>
+    <strong>A</strong> and <strong>C</strong> refer to two addressed selections,
+    treated as disjoint at the level of positions.
+    They correspond to a chosen pair among the six possible pairings
+    induced by the provisional statuses
+    <code>{Good, Bad, Undecided}</code>,
+    which remain interchangeable and revisable.
+  </li>
+
+  <li>
+    <strong>R</strong> designates the remaining addresses:
+    positions that are neither selected nor rejected at this stage.
+    They function as loss, delay,
+    or as a reserve for postselection
+    under future stabilizations.
+  </li>
+</ul>
+
+  <p>
+    Which roles are assigned to <code>A</code>, <code>C</code>, or <code>R</code>
+    is not intrinsic.
+    Any of the three labels
+    <em>Good</em>, <em>Bad</em>, or <em>Undecided</em>
+    may later be reassigned
+    as the community revises its stabilization.
+  </p>
+
+  <p>
+    To preserve fully positive integer boundaries,
+    constructions may restrict attention
+    to histories whose length <code>|E|</code>
+    is a multiple of a fixed base.
+    This allows multiplicities to remain explicit
+    while avoiding normalization assumptions.
+  </p>
+
+  <p>
+    At this level, probability is recovered
+    through cardinality alone.
+    For a stabilized sequence of length <code>n</code>,
+    the community may estimate:
+  </p>
+
+  <pre>
+π(A) = |A| / n
+π(C) = |C| / n
+π(R) = |R| / n
+  </pre>
+
+  <p>
+    These quantities are not probabilities in an absolute sense.
+    They are contextual summaries of stabilized selections,
+    meaningful only relative to the community
+    and the chosen selectors.
+  </p>
+
+  <p>
+    This construction is compatible
+    with Kolmogorov-style interpretations,
+    but does not commit to a single arithmetic.
+    Different orientations may induce
+    distinct local probability structures,
+    each with its own topology,
+    geometry, and notion of convergence.
+  </p>
+
+  <p>
+    What matters at this stage
+    is not which arithmetic is chosen,
+    but that these distinct probabilistic views
+    remain synchronizable
+    through shared sequences and revisable partitions.
+  </p>
+</section>
+<section>
+  <h3>Non-termination and workable continuity</h3>
+
+  <p>
+    Non-termination plays a central role in this work.
+    It is not treated as an abstract infinitary assumption,
+    but as a practical condition for communities
+    operating under interruption.
+  </p>
+
+  <p>
+    Any construction is assumed to be interruptible.
+    When interruption occurs,
+    continuation is not resolved by completion,
+    but by default mechanisms
+    that ensure workable values
+    for the surrounding environment.
+  </p>
+
+  <p>
+    This is one reason for excluding tautologies.
+    A tautology blocks continuation:
+    it leaves no room for reorientation,
+    no place to insert a new stroke.
+    By contrast, an interruptible finite sequence
+    can always be extended.
+  </p>
+
+  <p>
+    Given a finite sequence of strokes,
+    depending on the current position,
+    one may repeat the last interval,
+    repeat the whole sequence,
+    or re-index it as an interruptible POP.
+    These continuations are not arbitrary;
+    they preserve plausibility
+    while leaving space for revision.
+  </p>
+
+  <p>
+    The role of indices is to cover an axis,
+    or its multiplicities,
+    by workable pointers distributed across tapes.
+    This allows new strokes to be inserted
+    without collapsing the construction
+    to a single timeline or center.
+  </p>
+
+  <p>
+    In this sense, one can always ask again.
+    Non-termination guarantees that questioning,
+    updating, and re-anchoring remain possible
+    within a community,
+    even when processes are forcibly interrupted.
+  </p>
+</section>
+  <section>
+    <h2>Boundaries and rigidification</h2>
+
+    <p>
+      Rigidification occurs when boundaries are introduced:
+      limits on memory, time, scale, or reading order.
+      Such boundaries are not failures of the system,
+      but conditions that make computation,
+      communication, and consensus possible.
+    </p>
+
+    <p>
+      A bounded RTM may thus be constructed
+      as a stabilization of more flexible interactions,
+      without erasing the possibility
+      that these boundaries could later be revised.
+    </p>
+
+    <p>
+      Importantly, the system does not require
+      submission to classical notions of complexity.
+      It only requires that classical complexity
+      can be recovered as a particular rigidification.
+    </p>
+  </section>
+
+<section>
+
+<h2>Intent of simple history making
+</h2>
+
+Before zooming in or out,
+history making can be understood as a minimal intention
+applied to an undifferentiated trace.
+
+A belief supports the rigidification of a dot . into a segment -.
+This rigidification does not yet impose meaning,
+but constrains how the trace may be traversed.
+
+Four elementary traversal intentions may then be distinguished:
+
+– only left-to-right
+– only right-to-left
+– interruptible alternation (left, then right)
+– interruptible alternation (right, then left)
+
+These intentions do not describe paths,
+but admissible reading dynamics.
+</section>
+
+<section>
+
+<h2>Boundaries and controlled copies
+</h2>
+
+Introducing an explicit boundary | yields asymmetric configurations,
+such as -| or |-.
+Each admits multiple rigidifications,
+depending on whether copying is controlled from the left
+or from the right.
+
+A horizontal rigidification may then be understood
+as a controlled copy operation:
+one side constrains the reproduction of the other,
+while the inverse operation remains possible.
+
+At this stage, no global structure is assumed.
+What emerges are only locally stabilized relations
+between a trace, its boundary, and the direction of control.
+</section>
+
+<section id="communities-trace">
+  <h2>Trace and Reference Community</h2>
+
+  <p>
+    We do not introduce a unit or a zero. What follows is a <em>trace</em>:
+    a marked place where something happened, and where meaning can later
+    be locally reconstructed by any community embedded there.
+  </p>
+
+  <p>
+    In this rigidification, the current point of view is <strong>Dolores</strong>.
+    The order in which communities are introduced is not ontological;
+    it serves only as the <em>reference order</em> for the present exposition.
+  </p>
+
+  <figure class="trace-sequence">
+    <figcaption>
+      Reference sequence as seen from Dolores
+    </figcaption>
+    <div class="sequence">
+      <span class="cell">| d&nbsp;–&nbsp;Printemps |</span>
+      <span class="cell"> q&nbsp;–&nbsp;Été |</span>
+      <span class="cell"> b&nbsp;–&nbsp;Automne |</span>
+      <span class="cell"> p&nbsp;–&nbsp;Hiver |</span>
+    </div>
+  </figure>
+
+  <p>
+    Each element denotes a <em>community</em>, not a state.
+    Communities are substitutable by other communities,
+    provided one accepts a (generally high) conversion cost.
+    We will not make this cost explicit here.
+  </p>
+
+  <p>
+    No community exists without an implicit notion of time.
+    The only object that is not a community is a <em>demon</em>:
+    a fully rigid structure allowing a single interpretation
+    and blocking external exchange.
+    Whether this terminology is retained is left open.
+  </p>
+
+  <p>
+    The pair precedes the unit: fully rigid or fully open objects
+    have no standalone meaning. Meaning arises only through
+    contextual pairing and the possibility of inflation
+    from one context to another.
+  </p>
+</section>
+<section>
+
+  <h2>Community numbers and boundary arithmetic</h2>
+
+  <p>
+    The first families of manipulable quantities introduced here
+    are not defined as abstract numbers,
+    but as boundary-stabilized processes.
+    They are designed to behave numerically
+    only after sufficient rigidification.
+  </p>
+
+  <p>
+    A quantity <code>X</code> is described by two coupled components,
+   $X_d$ and $X_p$,dots
+   $X_d$ and $X_p$,
+    corresponding to distinct directional accumulations.
+    Neither component is meaningful in isolation;
+    their relation defines what may later be projected
+    as a numerical value.
+  </p>
+
+  <p>
+    Access to these components is mediated by contextual gestures,
+    such as <code>get</code> and <code>push</code>,
+    each associated with a boundary orientation.
+    These gestures should not be read as functions,
+    but as situated acts of reading or writing,
+    indexed by an anticipated interpretation.
+  </p>
+
+  <p>
+    The evolution of $X_d$ and $X_p$
+    is multiplicative and memory-dependent:
+ 
+
+  
+$X_d = (X_{d_q} / X_{d_b}) · old(X_d)$ and 
+$X_p = (X_{p_d} / X_{p_q}) · old(X_p)$
+
+ </p>
+  <p>
+    A rational projection may be recovered by defining
+    <code>val<sub>ℚ</sub>(X) =</code>$ X_d − X_p$,
+    but this projection is a rigidification,
+    not the primitive object.
+  </p>
+
+  <p>
+    Internally, construction histories may be encoded
+    using factorizations of the form <code>2<sup>i</sup>(2j+1)</code>,
+    where elementary POP operations increment
+    either depth (<code>i</code>) or lateral variation (<code>j</code>).
+    Such encodings compactly represent
+    families of compatible construction paths,
+    rather than single numerical states.
+  </p>
+<p>
+  One may, for example, encode the depth parameter <code>i</code>
+  using a unary trace of <code>i</code> consecutive <code>|</code>,
+  making the construction history itself
+  directly readable and interruptible.
+</p>
+
+  <p>
+    In this sense, numbers emerge as communal invariants:
+    stabilized summaries of repeated, interpretable actions
+    performed under shared boundary conventions.
+  </p>
+</section>
+
+
+<section>
+  <h3>Integers as communal dimensions</h3>
+
+  <p>
+    When a positive integer is used here,
+    it should not be imagined by default
+    as a fixed, atomic quantity.
+    It is better understood as a communal dimension:
+    something that may be inflated, partitioned,
+    or redistributed depending on context.
+  </p>
+
+  <p>
+    In particular, when viewed through an anthropomorphic process (ATM),
+    a positive integer participates in a never-stopping dynamic
+    of insertion and extension.
+    Even when bounded at a given scale,
+    at least one of its aspects behaves
+    as if it belonged to an unbounded
+    or infinite-dimensional system.
+  </p>
+
+  <p>
+    This does not contradict finite arithmetic.
+    It explains how finite behavior
+    is recovered as a rigidification
+    of a process that remains, in principle,
+    extensible and revisable.
+  </p>
+  <p>
+  This perspective will later allow
+  different modes of counting, probability,
+  and synchronization to coexist,
+  depending on which dimensions
+  are stabilized and which remain open.
+</p>
+</section>
+
+<section>
+  <h3>Example: Drawing as anchoring of plausible pasts</h3>
+
+  <p>
+    Consider the act of drawing a graph.
+    The drawing itself is a rigidified trace:
+    once it exists, it constrains interpretation,
+    even though the exact history of its construction
+    may no longer be uniquely recoverable.
+  </p>
+
+  <p>
+    From the point of view of the present reader,
+    the drawing belongs to a superposition
+    of plausible past constructions.
+    To make interpretation possible,
+    a community adopts a <em>canonical reading</em>
+    of drawings of this kind.
+  </p>
+
+  <p>
+    One such canonical reading may be described as follows.
+    Vertices are encountered in an order of emergence.
+    At each encountered vertex,
+    a small set of admissible gestures is assumed:
+  </p>
+
+  <ul>
+    <li>
+      <strong>Stay</strong> at the current vertex,
+      continuing the current liane (path).
+    </li>
+    <li>
+      <strong>Move</strong> toward a next vertex,
+      attempting to extend the current liane.
+    </li>
+    <li>
+      <strong>Skip</strong> one or more vertices,
+      abandoning the current liane
+      and attempting to start a new one.
+    </li>
+  </ul>
+
+  <p>
+    Once a vertex belongs to a liane,
+    subsequent encounters of the same vertex
+    may either:
+    continue that liane,
+    or initiate a new instance,
+    treated as a distinct construction
+    even if it reaches a previously visited root.
+  </p>
+
+  <p>
+    In this way,
+    a timed construction emerges:
+    not as a single path,
+    but as a sequence of path fragments
+    indexed by the moments
+    at which vertices are encountered.
+  </p>
+
+  <p>
+    What will later be interpreted as derivations,
+    paths, or algebraic relations
+    are thus grounded in a prior stabilization:
+    a shared way of reading drawings
+    as records of possible histories,
+    rather than as fixed objects.
+  </p>
+</section>
+
+<section>
+  <h3>Example: An evolving pixelized screen as communal memory</h3>
+
+  <p>
+    Consider a pixelized screen whose resolution evolves over time.
+    At the outset, only four pixels are present,
+    located at the four corners of the screen.
+    Each corner stores a memory,
+    not as a value,
+    but as a pair of integers:
+    <em>reasons to say black</em>
+    and <em>reasons to say white</em>.
+  </p>
+
+  <p>
+    A screening process then unfolds.
+    Using POP-like local operations,
+    each cell is visited in turn.
+    For each cell,
+    a provisional color is proposed
+    based on its current confidence pair,
+    without requiring a definitive decision.
+  </p>
+
+  <p>
+    Resolution is not fixed.
+    At certain moments,
+    a rescaling command may occur:
+    <em>zoom in</em> or <em>zoom out</em>.
+    Zooming in creates new pixels;
+    zooming out aggregates existing ones.
+    Importantly, older memories are not erased.
+    They remain available as contextual traces
+    influencing future decisions.
+  </p>
+
+  <p>
+    When a new pixel appears,
+    its coloring is not chosen in isolation.
+    It is inferred from:
+  </p>
+
+  <ul>
+    <li>
+      the local punctured pixel it refines or aggregates,
+    </li>
+    <li>
+      the construction history of the screen,
+    </li>
+    <li>
+      messages propagated from older resolutions,
+      possibly originating from different corners.
+    </li>
+  </ul>
+
+  <p>
+    Confidence evolves asymmetrically.
+    For example,
+    refinement may occur slowly,
+    following a pattern such as <code>(n+1)/n</code>,
+    while coarsening may occur more abruptly,
+    following patterns such as <code>n → 4n/5</code>.
+    These rates are not laws,
+    but stabilized community choices.
+  </p>
+
+  <p>
+    Over time,
+    what appears as a stable black-and-white image
+    emerges from the accumulation,
+    comparison, and partial synchronization
+    of many such local confidence pairs
+    across scales.
+    The image is thus not a snapshot of truth,
+    but a stabilized reading
+    of an evolving communal memory.
+  </p>
+</section>
+  <section>
+    <h2>Recovering standard mathematics as a project</h2>
+
+    <p>
+      By fixing reading orders, stabilizing roles,
+      and enforcing consistent insertion rules,
+      the constructions above recover familiar structures:
+      graphs, planar embeddings, automata,
+      and discrete proof systems.
+    </p>
+
+    <p>
+      Edges may be interpreted as bi-labeled relations,
+      carrying one pair at their origin
+      and another at their destination.
+      Interrupted edges remain meaningful,
+      carrying only a single pair.
+    </p>
+
+    <p>
+      Standard mathematical objects thus appear not as foundational entities,
+but as compressed stabilizations of compatible synchronizations—
+between construction processes, explanatory positions,
+and the constraints required to make them mutually intelligible within a community.
+    </p>
+    <p>One key point is to remove choice as an axiom to replace by superposition of  multiple plausibles
+     and the key hope here is that this axiom  is formally provable in some set theories  : when  one have Bourbaki $\tau$ which can be viewed
+      as a  "find symbol in term and substitute with square" as free  rewriting tool.  However it   would  need to be revisited here as a process
+       using only vertical and horizontal strikes. 
+        We will also  lifted it back to meta-math to view strokes as defining viable math spaces by setting differents levels of context
+         by drawing parenthesis or more precisely '[' ']' allowing to maintain two types of strokes.  
+    </p>
+  </section>
+
+  <section>
+    <h2>Reading, writing, and imagined readers</h2>
+
+    <p>
+      Formalization here explicitly accounts
+      for the imagined reader.
+      Writing anticipates reading strategies;
+      reading reconstructs plausible writing histories.
+    </p>
+
+    <p>
+      Coherence is preserved not by enforcing a single path,
+      but by maintaining translatable links
+      between compatible interpretations.
+      This allows standard formalisms—
+      manuals, archives of proofs, established notations—
+      to coexist with more flexible constructions.
+    </p>
+  </section>
+
+<section>
+  <h2>Points as traces (not zeros)</h2>
+
+  <p>
+    We represent a point using a minimal visible mark:
+    for example an occidental dot <code>.</code>,
+    a disk or a circle,
+    or an Arabic–Indic dot <code>٠</code>,
+    possibly rendered as a lozenge.
+  </p>
+
+  <p>
+    These marks must <em>not</em> be read as numerical zeros.
+    Zero already carries algebraic commitments
+    (notably absorption under multiplication)
+    that are inappropriate here.
+    What is represented is a <em>trace</em>:
+    the minimal indication that something happened.
+  </p>
+
+  <p>
+    Formally, a trace may be understood
+    as the intersection of distinguishable strokes.
+    For instance, if the available symbols are
+    <code>-</code> and <code>|</code>,
+    a trace corresponds to a crossing
+    that does not belong to either generating subspace alone,
+    and may require additional
+    (possibly imaginary) directions
+    to be made separable.
+  </p>
+
+  <p>
+    A trace designates a location
+    in which a community may later be embedded,
+    attempting to relate this occurrence
+    to past and future events.
+    Any such embedding must allow
+    locally reconcilable meaning
+    to be obtainable from within the community,
+    relative to its own inherited parameters.
+  </p>
+
+  <p>
+    In the strong derive model,
+    separability is guaranteed by a <em>time demon</em>.
+    The demon is not a community:
+    it has no beliefs, no perspective,
+    and no access to “what time it is”.
+    Its sole role is structural:
+    at each observation,
+    it ensures the insertion of
+    a finite number of new strokes
+    at positions that remain pairwise separable
+    (for instance via imaginary bounding boxes).
+  </p>
+
+  <p>
+    Any entity equipped with a notion of time,
+    history, or revision
+    is already considered a community.
+    The demon only enforces the possibility
+    of distinguishing successive insertions;
+    interpretation and temporal meaning
+    arise exclusively at the community level.
+  </p>
+
+  <p>
+    Viewed as an encoding process,
+    such constructions may later be read
+    as relating parameters <code>n</code> and <code>m</code>
+    together with matchings
+    between copies of past configurations
+    and updated ones,
+    where new traces are added
+    without erasing earlier occurrences.
+  </p>
+</section>
+<section>
+  <h2>Derives: traces, axes, and reversible anchoring</h2>
+
+  <p>
+    A <strong>derive</strong> is not a symbol, nor an object,
+    but the stabilized trace of a synchronization event.
+    It records that something happened at a place
+    where several potential interpretations
+    briefly aligned.
+  </p>
+
+  <p>
+    In the constructions considered here,
+    derives are observed relative to
+    four distinguished axes.
+    Each axis carries an ordered sequence
+    of integer-indexed positions,
+    interpreted as possible anchoring sites
+    for traces.
+  </p>
+
+  <p>
+    When a derive occurs,
+    it manifests locally as the appearance
+    of <em>three distinguishable dots</em>
+    across the axes.
+    These dots are not points in a fixed space,
+    but marks indicating that a crossing,
+    or near-crossing,
+    of strokes has been synchronized.
+  </p>
+
+  <p>
+    From the point of view of a community,
+    all strokes may be read as lines
+    originating from integer positions on an axis.
+    A local rigidification mechanism
+    (sometimes referred to as a <em>time demon</em>,
+    though it is not itself a community)
+    ensures that relative scales are preserved
+    under rescaling:
+    intervals may expand or contract,
+    but their ordering and proportional relations
+    remain comparable.
+  </p>
+
+  <p>
+    Tie-breaking is only required
+    when a trace lies exactly at the midpoint
+    of an interval.
+    In such cases,
+    different axes adopt distinct tie policies,
+    preventing symmetry collapse
+    and allowing derives
+    to remain distinguishable. Notice that inside a synchronised process a careful insertion procedure can avoid ties using as lexicographic tie breaker the synchronising command order. 
+  </p>
+
+  <p>
+    When viewed globally,
+    a derive may be represented
+    as a <em>spiral-like trajectory</em>:
+    moving forward corresponds
+    to continued synchronization,
+    while moving backward
+    is only permitted along specific axes.
+    This backward motion
+    may be read as a <em>restart</em>,
+    or the initiation of a new liane.
+  </p>
+
+  <p>
+    A liane may simply cross space,
+    represented schematically as <code>|.|</code>,
+    or may bounce and reconnect,
+    as in <code>|.|.|</code>.
+    In all cases,
+    full interpretation is deferred:
+    whether a crossing corresponds
+    to a completed pairing
+    or to a pending synchronization
+    is decided only when local spaces
+    are later fitted together.
+  </p>
+
+  <p>
+    Derives thus support revision.
+    They encode not only what was constructed,
+    but also the possibility
+    that future messages,
+    returning along different paths,
+    may alter how past traces are understood.
+    This preserves continuity
+    without freezing meaning.
+  </p>
+  </section>
+  <section class="math-box">
+  <h3>Trace composition and partial decoding</h3>
+
+  <p>
+    Consider composite traces built from the same internal components,
+    but rigidified through different directional couplings:
+  </p>
+
+  <pre class="formula">
+.[λ[.]μ − σ[.]ρ].
+.[λ[.]μ | σ[.]ρ].
+  </pre>
+
+  <p>
+    These expressions differ only by the rigidification
+    (<code>-</code> versus <code>|</code>),
+    yet they induce distinct synchronisation possibilities
+    when read by a community.
+  </p>
+
+  <p>
+    A  partial decoding operator may 
+    attempt to recover an inscription that she we view as  <code>c</code> in the context she has to create
+    from a trace configuration:
+  </p>
+
+
+For instance :
+
+$\left[
+ \begin{matrix} 
+.&- &.&[&.&c&.&]&. \\
+&| & &|& & & &|&\\
+ & & & &-&-&-&\\
+\end{matrix}
+\right]$
+
+
+  <p>
+    Decoding may succeed and recover <code>c</code>,
+    or fail and leave only a directional trace
+    (<code>-</code> or <code>|</code>),
+    depending on available synchronisations
+    and inherited rigidifications.
+  </p>
+
+  <p>
+    What remains is always a trace:
+    never pure absence,
+    never guaranteed meaning.
+  </p>
+</section>
+<section>
+<h3>Traces and local geometry</h3>
+
+When Dolores says o can be represented by writing a trace such as \begin{matrix}
+
+&-&|&&&\\
+/&&\downarrow&&\\
+&&-&-&-&-&\\
+|\rightarrow&|&o_{dd}&o_{dp}&o_{pd}&o_{pp}\\
+&|&o_{dq}&o_{db}&o_{pq}&o_{pb}\\
+&|&o_{qd}&o_{qp}&o_{bd}&o_{bp}\\
+&|&o_{qd}&o_{qp}&o_{bq}&o_{bb}\\
+\end{matrix}
+
+she is not asserting numerical values, probabilities, or causal relations.
+She is recording how traces organize a local geometry.
+
+The symbols $o_{dd}-o_{dq}-o_{dp}-o{d_b}-\ldots$ do not denote outcomes in isolation.
+They mark positions in a grid generated by crossings of strokes, directions, and reading/writing roles.
+What matters here is not the labels themselves, but the relative placement imposed by the trace structure.
+
+In this view, a trace induces a local coordinate system:
+horizontal and vertical strokes define distinguishable directions,
+arrows encode intent or orientation,
+and crossings generate sites where meaning can later be stabilized or revised.
+
+This construction does not yet speak about correlation or probability.
+It only ensures that when correlations are later introduced,
+they arise from a shared geometric organization of traces,
+rather than from externally imposed numerical assignments.
+<section class="bridge-note">
+  <h3>Bridge to quantum formalisms (non-binding)</h3>
+
+  <p>
+    At a later stage, lianes will be interpreted
+    as stabilizers carrying a phase.
+    Crossings and uncrossings will then appear
+    as controlled transformations,
+    rather than primitive geometric facts.
+  </p>
+
+  <p>
+    One objective of this bridge
+    is to explain why quantum isomorphisms
+    count homomorphisms into planar graphs,
+    without restricting the underlying constructions
+    to a fixed two-dimensional Euclidean space.
+  </p>
+
+  <p>
+    Geometry here is treated contextually:
+    each point may locally recover
+    a triple of distinguishable directions,
+    sufficient to support stabilization and phase,
+    without enforcing a global embedding.
+  </p>
+
+  <p class="note">
+    The requirement that each stabilizer
+    carry at least three terms
+    will later be introduced as a technical condition.
+    It is not foundational,
+    and does not affect the present constructions.
+  </p>
+</section>
+
+<section id="lookslike-rings">
+  <h2>LooksLikeRings Community</h2>
+
+<style>
+  #lookslike-rings {
+    margin: 3rem 10%;
+    font-family: Georgia, "Times New Roman", serif;
+  }
+
+  #lookslike-rings .distance-square {
+    margin: 2rem 0;
+    padding: 1rem;
+    border: 2px dashed #999;
+    display: inline-block;
+    background: #f9f9f9;
+  }
+
+  #lookslike-rings table {
+    border-collapse: collapse;
+    text-align: center;
+    margin: auto;
+  }
+
+  #lookslike-rings .inner-square td {
+    border: 1px solid #ccc;
+    padding: 1rem 2rem;
+    font-weight: bold;
+    background: #fff;
+  }
+
+  #lookslike-rings .hint {
+    font-size: 0.9rem;
+    color: #555;
+    margin-top: 0.5rem;
+  }
+</style>
+  <p>
+    Rather than imposing algebraic laws as axioms,
+    we associate to each refinement level
+    a family of defect measures.
+    These include approximations of associativity, identity,
+    and commutativity distances, as well as refinement of the norm.
+  </p>
+
+  <p>
+    Strokes are grouped into minimal parenthesized terms,
+    interpreted in layers. The community maintains
+    coherence through repeated interactions, forced interruptions,
+    and by default mitigation mechanisms,
+    ensuring plausible and workable sequences of elements.
+  </p>
+
+  <p>
+    At each refinement step, the community evaluates
+    the “distance” to perfect algebraic laws and adapts accordingly.
+    This allows approximate C*-algebra structures to emerge,
+    where higher levels of refinement correspond
+    to increasingly precise estimates of algebraic behavior.
+  </p>
+
+  <div class="distance-square">
+    <h3>Bi-graded Distance Square</h3>
+    <table>
+      <tr>
+        <th></th>
+        <th>Refinement →</th>
+      </tr>
+      <tr>
+        <td>Prof. ↓</td>
+        <td>
+          <table class="inner-square">
+            <tr>
+              <td><strong>Associativity Dist.</strong></td>
+              <td><strong>Identity Dist.</strong></td>
+            </tr>
+            <tr>
+              <td><strong>Commutativity Dist.</strong></td>
+              <td><strong>Norm Refinement</strong></td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+    <p class="hint">
+      Each corner corresponds to a type of defect measure. 
+      Strokes and parenthesized terms occupy positions in this square,
+      refined by interaction and repeated evaluation.
+    </p>
+  </div>
+
+  <p>
+    By maintaining this structure, the community can explore
+    approximate algebraic relations without collapsing,
+    ensuring plausible sequences and emergent coherence.
+  </p>
+</section>
+<h3>Associativity as a community modulator</h3>
+<p>
+  Consider the term
+  $
+   1^{\uparrow 2}
+    \cdot \mathrm{Plus}^{\uparrow 3}
+    \cdot \mathrm{MAXINT}
+    \cdot \mathrm{Minus}^{\uparrow 3}
+    \cdot 1^{\uparrow 2}
+  $.
+  
+  On a real machine, where interpretation is done starting form higher level term
+   (with the marker $\uparrow^l$ standing in for a structured interpretative
+position that will later be refined)  its evaluation is not determined solely
+  by symbolic structure.
+</p>
+
+<p>
+  Depending on the chosen associativity and on effective bounds
+  (such as $\mathrm{MAXINT}$, interruption policies, or overflow handling),
+  the same term may be rigidified as
+</p>
+
+<ul>
+  <li>
+   $
+    \mathrm{Par3}^{\uparrow 4}
+    \cdot 1^{\uparrow 2}
+    \cdot \mathrm{Plus}^{\uparrow 3}
+    \cdot \mathrm{MAXINT}
+    \cdot \mathrm{Minus}^{\uparrow 3}
+    \cdot 1^{\uparrow 2}
+  $ which is meant here as 
+    $
+      \bigl[
+        1^{\uparrow 2}
+        \cdot \mathrm{Plus}^{\uparrow 3}
+        \cdot \mathrm{MAXINT}
+      \bigr]
+      \cdot \mathrm{Minus}^{\uparrow 3}
+      \cdot 1^{\uparrow 2}
+    $
+  </li>
+
+  <li> $
+   1^{\uparrow 2}
+    \cdot \mathrm{Plus}^{\uparrow 3}
+    \cdot \mathrm{Par3}^{\uparrow 4}
+    \cdot 
+     \mathrm{MAXINT}
+    \cdot \mathrm{Minus}^{\uparrow 3}
+    \cdot 1^{\uparrow 2}
+  $  which is meant here as 
+    $
+      1^{\uparrow 2}
+      \cdot \mathrm{Plus}^{\uparrow 3}
+      \cdot \bigl[
+        \mathrm{MAXINT}
+        \cdot \mathrm{Minus}^{\uparrow 3}
+        \cdot 1^{\uparrow 2}
+      \bigr]
+    $
+  </li>
+
+  <li>
+    or as neither, due to interruption, saturation,
+    or undefined behavior.
+  </li>
+</ul>
+
+<p>
+  Associativity here does not function as a neutral law.
+  It acts as a modulator:
+  a carrier of assumptions shared by a community
+  in which an actual computer operates.
+</p>
+
+<p>
+  Any computing system thus participates in at least two communities:
+  the human community that defines its interpretation,
+  and the material community in which it executes.
+  Their synchronization determines what is considered
+  a valid computation.
+</p>
+
+  </section>
+
+</main>
+
+<footer>
+  <a href="index.html">↩ back to access keys</a>
+</footer>
+
+<footer class="footnotes">
+  <hr>
+  <p id="fn-chatgpt">
+    <sup>†</sup>
+    Parts of the wording and structuring of this text were developed
+    with the assistance of conversational language models,
+    used as tools for iteration, clarification, and stabilization
+    of intent, without constituting an authority
+    or a source of validation.
+  </p>
+</footer>
+
+</body>
+
+  <nav class="cross-links">
+    <p>Continue through other access points:</p>
+    <ul>
+      <li><a href="philosophy.html">Philosophical access</a></li>
+      <li><a href="quantum.html">Quantum / logical access</a></li>
+      <li><a href="assemblages.html">Assemblages and intuition</a></li>
+    </ul>
+  </nav>
+
+</html>
